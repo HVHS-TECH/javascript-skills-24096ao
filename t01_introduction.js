@@ -1,9 +1,24 @@
 /****************************
-This is a block comment.
-Put your header comment here!
+to1_introduction.js
 ****************************/
 console.log("Running t01_introduction.js")
-console.log(/*Insert your message here!*/)
 
-// This is a single line comment
+
+// variables
+
+/****************************
+Main code
+****************************/
+console.log("hello world!")
+
+
+/****************************
+functions
+****************************/
+
+
+
+/****************************
+end of code
+****************************/
 
