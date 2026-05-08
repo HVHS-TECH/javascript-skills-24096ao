@@ -1,30 +1,37 @@
 /****************************
 t16_arrays_continued.js
-****************************/
-console.log("t16_arrays_continued.js")
+****************************
+const ITEM_FIELD = document.getElementById("itemField");
+const ADD_ITEM_FIELD = document.getElementById("addItem");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-const ITEM_FIELD = document.getElementById("itemField")
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
-
-let classArray = ["Alice", " Bob", " jhon", " kaia", " olivia"]
+let classArray = ["Alice", " Bob", " jhon", " kaia", " olivia"];
 let item = ITEM_FIELD.value;
+let addItem = ADD_ITEM_FIELD;
 
-/****************************
+****************************
 Main code
-****************************/
-addItem()
-console.log("in your shopping list is " +classArray)
-
+****************************
+console.log(addItem)
 /****************************
 functions
-****************************/
-function addItem() {
-    for (let i=0; i<1; i++) {
-    classArray.push(" " +item)
-    }
+****************************
+function addedItem(){
+    addItem+1;
+}
+for (let i=addItem; i<1; i++) {
+    console.log(addItem)
 }
 /****************************
 end of code
 ****************************/
+const ITEM_FIELD = document.getElementById("itemField");
 
+let classArray = ["Alice", " Bob", " jhon", " kaia", " olivia"];
 
+let item = ITEM_FIELD;
+
+function AddItem() {
+    classArray.push(item);
+    console.log(classArray);
+}
