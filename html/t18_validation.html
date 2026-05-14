@@ -21,6 +21,13 @@
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
+  <form id="addItem" onsubmit="return false;">
+    <lable for="formItem">Add an item:</lable>
+    <input type="text" id="itemField" name="formItem" value="item" required>
+    <br>
+    <input type="Submit" onClick="getFormInput()">
+  </form>
+
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.

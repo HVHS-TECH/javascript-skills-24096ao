@@ -21,12 +21,11 @@
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
-  <form>
-    <lable for="formItem">Add item to shopping list: </lable>
-    <input type="list" id="itemField" name="formItem" value="item">
+  <form onsubmit="return false;">
+    <lable for="formItem">Add an item:</lable>
+    <input type="text" id="itemField" name="formItem" value="item">
     <br>
-    <input type="Submit" value="Add item" onclick="AddItem()">
-    <input type="Submit" value="Finish" onclick="Finish()">
+    <input type="Submit" onClick="getFormInput()">
   </form>
 
   <div id="spaceForJavaScriptOutput">

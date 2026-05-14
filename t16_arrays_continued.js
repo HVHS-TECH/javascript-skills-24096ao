@@ -6,39 +6,25 @@ console.log("t16_arrays_continued.js");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     const ITEM_FIELD = document.getElementById("itemField");
 
-    const ShoppingList = [ ];
-
-    let item = String(ITEM_FIELD.value);
-    
-    let newItem = [item];
-    /*let length = ShoppingList.length;*/
+    let shoppingList = [ ];
+    let newItem = String(ITEM_FIELD.value);
 /****************************
 Main code
 ****************************/
 
+
 /****************************
 functions
 ****************************/
-function AddItem() {
-    ShoppingList.length = ShoppingList.length + 3;
-    console.log(item);
-    console.log(" "+length);
-    ShoppingList.push(item);
-}
-
-function Finish() {
+function getFormInput() {
+    shoppingList.push(newItem);
     
+    OUTPUT.innerHTML = "<p>"+shoppingList+"</p>";
+    OUTPUT.innerHTML += "<p>You added "+newItem+"</p>";
+    
+    console.log(""+shoppingList);
+    console.log(newItem);
 }
 /****************************
 end of code
 ****************************/
-
-
-/*
-    * start
-    * User imputs item
-    * add item to array and display
-    * add another?
-    * Yes- repeat
-    * No - Display final array
- */
