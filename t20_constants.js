@@ -8,11 +8,10 @@ console.log("t20_constants.js");
     const ADD_ITEM = document.getElementById("addItem");
 
     let shoppingList = [];
-    let newItem = {
-        item = String(ITEM_FIELD.value);
-        shortenItem = newItem.trim();
-        lowerCaseItem = newItem.toLowerCase();
-    }
+    let newItem = String(ITEM_FIELD.value);
+    shortenItem = newItem.trim();
+    lowerCaseItem = newItem.toLowerCase();
+
 /****************************
 Main code
 ****************************/
